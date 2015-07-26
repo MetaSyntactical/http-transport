@@ -14,4 +14,11 @@ interface TransportInterface
      * @return ResponseInterface
      */
     public function send(RequestInterface $request);
+
+    /**
+     * Create new request
+     *
+     * @return RequestInterface
+     */
+    public function newRequest();
 }
