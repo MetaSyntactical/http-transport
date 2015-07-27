@@ -21,4 +21,11 @@ interface TransportInterface
      * @return RequestInterface
      */
     public function newRequest();
+
+    /**
+     * Build query string as required for PSR 7 URI ->withQuery
+     *
+     * @return string
+     */
+    public function buildQuery();
 }
